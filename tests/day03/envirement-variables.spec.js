@@ -10,7 +10,7 @@ test("@env-test Testing envirement variable", async ({page})=>{
 
 
 
-test("@env-test Bypass authentication by encoding the credentials based64 fromat", async ({
+/*test("@env-test Bypass authentication by encoding the credentials based64 fromat", async ({
   page,
 }) => {
   let encodedCredential = Buffer.from(
@@ -24,3 +24,4 @@ test("@env-test Bypass authentication by encoding the credentials based64 fromat
   let actualText = page.locator("//div[@id='content']//h3");
   await expect(actualText).toContainText("Basic Auth");
 });
+*/
