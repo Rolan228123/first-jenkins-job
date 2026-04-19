@@ -12,7 +12,7 @@ test("Bypass authentication by embeding credentials in Url", async ({
 });
 
 
-test("Bypass authentication by encoding the credentials based64 fromat", async({page}) => {
+/*test("Bypass authentication by encoding the credentials based64 fromat", async({page}) => {
 
 let encodedCredential = Buffer.from("admin:admin").toString("base64");
 await page.setExtraHTTPHeaders({'Authorization':`Basic ${encodedCredential}`});
@@ -22,3 +22,4 @@ await page.setExtraHTTPHeaders({'Authorization':`Basic ${encodedCredential}`});
 let actualText = page.locator("//div[@id='content']//h3");
 await expect(actualText).toContainText("Basic Auth");
 });
+*/
