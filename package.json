@@ -10,6 +10,7 @@
  "test-file-headed": "npx playwright test --headed --grep file-name.spec.js",
  "test-tag-headless": "npx playwright test --grep @wip",
 "test-tag-headed": "npx playwright test --headed --grep @sep01",
+"test-smoke": "npx playwright test --grep @smoke",
  "report": "npx playwright show-report"
   },
   "keywords": [],

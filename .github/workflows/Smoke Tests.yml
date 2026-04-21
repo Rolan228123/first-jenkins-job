@@ -1,21 +1,13 @@
 name: Playwright Tests
 
 on:
-  push: # Auto-trigger the workflow on push to main or master branches
-    branches:
-      - main
-      - master
-  pull_request: # Auto-trigger the workflow on pull requests to main or master branches
-    branches:
-      - main
-      - master
   schedule:
-    - cron: '0 13 * * *'  # Runs every day at 8:00 AM EST
+    - cron: '0 12 * * *'  # Runs every day at 8:00 AM EST
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
   test:
-    timeout-minutes: 60
+    timeout-minutes: 5
     runs-on: ubuntu-latest # Virtual amchine (macos-latest, windows-latest, ubuntu-latest)
 
     # setup the node js
@@ -47,7 +39,7 @@ jobs:
 
     # runs the tests in headless mode (without a GUI)
     - name: Run Playwright tests
-      run: npm run tests-headless
+      run: npm run test-smoke
 
     # Upload test results and reports
     - name: Upload Playwright test results

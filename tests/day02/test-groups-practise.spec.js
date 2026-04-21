@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-test.describe("Practice.cydeo", () => {//!Practice Cydeo
+test.describe("Practice.cydeo @smoke", () => {//!Practice Cydeo
 
   test.beforeEach("Navigating to the page", async ({ page }) => {
     await page.goto("https://the-internet-5chk.onrender.com/");
