@@ -38,7 +38,6 @@ jobs:
       run: npx playwright install --with-deps chromium
 
     # configures the environment variables for the tests
-# configures the environment variables for the tests
     - name: configure environment variables
       run: |
         echo "PRACTICE_USERNAME=${{ secrets.PRACTICE_USERNAME }}" >> $GITHUB_ENV
